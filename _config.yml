@@ -1,0 +1,33 @@
+# Site settings
+title:          "root@andresr.de:~$"
+description:    "Cybersecurity Blog by Andres Rauschecker"
+url:            "https://andresr.de"
+baseurl:        ""
+
+# Author
+author:
+  name:         Andres Rauschecker
+  url:          https://andresr.de
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       4
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]

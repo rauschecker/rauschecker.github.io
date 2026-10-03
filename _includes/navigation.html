@@ -1,0 +1,28 @@
+<nav class="nav">
+  <div class="nav-container">
+    <a href="{{ site.baseurl }}/">
+      <h2 class="nav-title">{{ site.title }}</h2>
+    </a>
+    <ul>
+      <li><b><a href="{{ '/whoami' | prepend: site.baseurl }}">whoami</a></b></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .blink {
+      animation: blinker 2s step-start infinite;
+      padding-left: 5px;
+    }
+      
+  @keyframes blinker {
+      50% {
+            opacity: 0;
+            }
+  }
+</style>
+<script>
+  var span=document.getElementsByClassName("nav-title")[0].appendChild(document.createElement("span"));
+  span.textContent ="█";
+  span.classList.add("blink");
+</script>

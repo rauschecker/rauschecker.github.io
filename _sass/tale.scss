@@ -1,0 +1,10 @@
+@use 'tale/variables';
+@use 'tale/base';
+@use 'tale/code';
+@use 'tale/post';
+@use 'tale/syntax';
+@use 'tale/layout';
+@use 'tale/pagination';
+@use 'tale/catalogue';
+@use 'tale/404' as page-404;
+@use 'tale/tags';
